@@ -28,7 +28,7 @@
             height: 60px;
             width: 100px;
         }
-                .diagonal-header:before {
+        .diagonal-header:before {
             content: "";
             position: absolute;
             top: 0;
@@ -52,9 +52,6 @@
             z-index: 2;
             font-weight: bold;
         }
-        .audio-label {
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
@@ -62,15 +59,7 @@
     <h1>Experimental Speech Data Sample</h1>
     <p>(GUO Taiyang @Japan Advanced Institute of Science and Technology, Japan, 2024. 11.10)</p>
 
-    <h2>Overview of Speech</h2>
-    <p>This page contains three conditions:</p>
-    <ul>
-        <li><strong>Original Speech:</strong> contains the raw speech samples sourced from the Fujitsu Japanese Emotional Speech Database.</li>
-        <li><strong>Noise Vocoded Speech (0-64 Hz):</strong> contains the noise-vocoded speech of original speech, with the modulation frequency components in the 0-64 Hz band.</li>
-        <li><strong>Noise Vocoded Speech (0-16 Hz):</strong> contains the noise-vocoded speech of original speech, with the modulation frequency components in the 0-16 Hz band.</li>
-    </ul>
-
-    <h2>Audio Samples Table</h2>
+    <h2>Audio Samples Table 1</h2>
     <table>
         <tr>
             <th class="diagonal-header">
@@ -85,87 +74,66 @@
         </tr>
         <tr>
             <td><strong>Original</strong></td>
-            <td>
-                <audio controls>
-                    <source src="Original_Speech/A001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Original_Speech/B001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Original_Speech/D001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Original_Speech/F001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Original_Speech/H001.wav" type="audio/wav">
-                </audio>
-            </td>
+            <td><audio controls><source src="Ori_NVS/A001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/B001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/D001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/F001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/H001.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
             <td><strong>Noise Vocoded Speech (0-64 Hz)</strong></td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-64Hz/A001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-64Hz/B001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-64Hz/D001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-64Hz/F001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-64Hz/H001.wav" type="audio/wav">
-                </audio>
-            </td>
+            <td><audio controls><source src="Ori_NVS/A001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/B001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/D001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/F001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/H001.wav" type="audio/wav"></audio></td>
+        </tr>
+    </table>
+
+    <h2>Audio Samples Table 2</h2>
+    <table>
+        <tr>
+            <th class="diagonal-header">
+                <span class="condition">Condition</span>
+                <span class="emotion">Emotion</span>
+            </th>
+            <th>Neutral</th>
+            <th>Joy</th>
+            <th>Cold anger</th>
+            <th>Sadness</th>
+            <th>Hot anger</th>
+        </tr>
+        <tr>
+            <td><strong>Original</strong></td>
+            <td><audio controls><source src="Ori_NVS/A001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/B001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/D001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/F001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/H001.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td><strong>Noise Vocoded Speech (0-64 Hz)</strong></td>
+            <td><audio controls><source src="Ori_NVS/A001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/B001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/D001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/F001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/H001.wav" type="audio/wav"></audio></td>
         </tr>
         <tr>
             <td><strong>Noise Vocoded Speech (0-16 Hz)</strong></td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-16Hz/A001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-16Hz/B001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-16Hz/D001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-16Hz/F001.wav" type="audio/wav">
-                </audio>
-            </td>
-            <td>
-                <audio controls>
-                    <source src="Noise_Vocoded_Speech_0-16Hz/H001.wav" type="audio/wav">
-                </audio>
-            </td>
+            <td><audio controls><source src="Ori_NVS/A001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/B001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/D001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/F001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/H001.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td><strong>Additional Condition</strong></td>
+            <td><audio controls><source src="Ori_NVS/A001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/B001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/D001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/F001.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="Ori_NVS/H001.wav" type="audio/wav"></audio></td>
         </tr>
     </table>
 
